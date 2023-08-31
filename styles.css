@@ -9,24 +9,16 @@
   --primary: #ff6433;
 }
 
-/* body {
-  display: flex;
-  justify-content: center;
-} */
-
 /* header styling */
 header {
-  border: 10px solid black;
   width: 100%;
 }
 .header {
-  border: 1px solid red;
   height: 15vh;
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: goldenrod; */
   padding: 14px 0px;
   margin: auto;
 }
@@ -42,7 +34,6 @@ header {
   align-items: center;
   column-gap: 40px;
   border-right: 1px solid gray;
-  border: 1px solid red;
   padding: 5px 20px 5px 0;
 }
 
@@ -55,7 +46,6 @@ header {
   color: #ffffff;
   padding: 5px;
   transition: 1s;
-  /* list-style-type: none; */
 }
 nav .right-contact {
   display: flex;
@@ -64,10 +54,6 @@ nav .right-contact {
 }
 
 nav .right-contact div.right-contact-text .ra {
-  /* font-size: 14px;
-  line-height: 18px; */
-  opacity: 0.7;
-  border: 1px solid red;
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -75,9 +61,6 @@ nav .right-contact div.right-contact-text .ra {
   color: #1e1b1b;
 }
 nav .right-contact div.right-contact-text .num {
-  /* font-size: 14px;
-  line-height: 18px; */
-  border: 1px solid red;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -86,17 +69,14 @@ nav .right-contact div.right-contact-text .num {
 }
 /* session1 session */
 section.session1 {
-  border: 10px solid black;
   width: 100%;
   height: 85vh;
-  /* margin: auto; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 section.session1 .container {
-  border: 5px solid green;
   width: 80%;
   height: 80%;
   display: flex;
@@ -105,12 +85,9 @@ section.session1 .container {
 section.session1 .container .left-text {
   width: 50%;
   height: 100%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  /* row-gap: 30px; */
 }
 section.session1 .container .left-text .content {
   font-family: "Manrope", sans-serif;
@@ -174,33 +151,111 @@ section.session1 .container .right-img {
   position: relative;
   width: 50%;
   height: 100%;
-  border: 1px solid red;
-  background-image: url("./images/Image.png");
+  background-image: url("img/Image.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 section.session1 .container .right-img .service {
   position: absolute;
-  height: 202px;
-  width: 250px;
-  top: -3%;
-  left: -18%;
-  /* border-radius: 18px; */
+  height: 80px;
+  width: 200px;
+  background-color: rgba(255, 255, 255);
+  top: 10%;
+  left: -5%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  border: 10px solid rgb(225, 225, 225);
+}
+section.session1 .container .right-img .service .left {
+  width: 30%;
+  height: 80%;
+  background-color: #5cba99;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+section.session1 .container .right-img .service .left p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: -3%;
+  color: #ffffff;
+}
+section.session1 .container .right-img .service .left p span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  color: #ffffff;
+}
+section.session1 .container .right-img .service .right h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: -3%;
+  color: #1e1b1b;
+  margin-left: 5px;
 }
 section.session1 .container .right-img .rating {
   position: absolute;
-  height: 202px;
-  width: 250px;
-  right: -13%;
-  bottom: 0;
-  /* border-radius: 18px; */
+  height: 80px;
+  width: 200px;
+  background-color: rgba(255, 255, 255);
+  bottom: 10%;
+  right: 0;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  border: 10px solid rgb(225, 225, 225);
+}
+section.session1 .container .right-img .rating .left {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.session1 .container .right-img .rating .left p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -3%;
+  color: #1e1b1b;
+}
+section.session1 .container .right-img .rating .left h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: -5px;
+  letter-spacing: -3%;
+  color: #1e1b1b;
+}
+section.session1 .container .right-img .rating .right h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: -3%;
+  color: #1e1b1b;
+  margin-left: 5px;
 }
 
 /* session 2 starts here */
 section.session2 {
-  border: 1px solid red;
-  height: 120vh;
+  height: 100vh;
   width: 100%;
   background-color: #e2e6e9;
   display: flex;
@@ -212,20 +267,19 @@ section.session2 {
 section.session2 .left-container {
   width: 40%;
   height: 80%;
-  border: 1px solid red;
 }
 section.session2 .left-container h2 {
-  border: 1px solid red;
   font-family: "Manrope", sans-serif;
   font-weight: 800;
   font-size: 48px;
-  line-height: 76px;
+  line-height: 65px;
   letter-spacing: -3%;
 }
 section.session2 .left-container .content1,
 section.session2 .left-container .content2,
 section.session2 .left-container .content3 {
   display: flex;
+  gap: 10px;
 }
 section.session2 .left-container .content1 h3,
 section.session2 .left-container .content2 h3,
@@ -236,30 +290,49 @@ section.session2 .left-container .content3 h3 {
   line-height: 36px;
   letter-spacing: -3%;
   color: #1e1b1b;
-  border: 2px solid black;
 }
 section.session2 .left-container .content1 p,
 section.session2 .left-container .content2 p,
 section.session2 .left-container .content3 p {
   font-family: "Manrope";
-  font-weight: 600;
-  font-size: 23.5px;
-  line-height: 38px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
   color: #1e1b1b;
+  opacity: 0.8;
+}
+section.session2 .left-container .content1 img,
+section.session2 .left-container .content2 img,
+section.session2 .left-container .content3 img {
+  width: 47px;
+  height: 47px;
+  background-color: white;
+  border-radius: 50%;
 }
 .left-gap {
   height: 30px;
 }
+section.session2 .left-container .know {
+  display: flex;
+  gap: 15px;
+  margin-left: 30px;
+}
+section.session2 .left-container .know {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 31.5px;
+  color: #1e1b1b;
+}
 section.session2 .right-container {
   width: 40%;
   height: 80%;
-  border: 1px solid red;
 }
 section.session2 .right-container h3 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 38px;
-  line-height: 62.2px;
+  line-height: 55px;
   letter-spacing: -3%;
 }
 form input {
