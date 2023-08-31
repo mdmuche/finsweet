@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff6433;
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+} */
+
+/* header styling */
+header {
+  border: 10px solid black;
+  width: 100%;
+}
+.header {
+  border: 1px solid red;
+  height: 15vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: goldenrod; */
+  padding: 14px 0px;
+  margin: auto;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header nav ul {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  border-right: 1px solid gray;
+  border: 1px solid red;
+  padding: 5px 20px 5px 0;
+}
+
+.header nav ul li {
+  list-style-type: none;
+  transition: 1s;
+}
+.header nav ul:hover li {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 5px;
+  transition: 1s;
+  /* list-style-type: none; */
+}
+nav .right-contact {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+nav .right-contact div.right-contact-text .ra {
+  /* font-size: 14px;
+  line-height: 18px; */
+  opacity: 0.7;
+  border: 1px solid red;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1e1b1b;
+}
+nav .right-contact div.right-contact-text .num {
+  /* font-size: 14px;
+  line-height: 18px; */
+  border: 1px solid red;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 31.5px;
+  color: #1e1b1b;
+}
+/* session1 session */
+section.session1 {
+  border: 10px solid black;
+  width: 100%;
+  height: 85vh;
+  /* margin: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.session1 .container {
+  border: 5px solid green;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+section.session1 .container .left-text {
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* row-gap: 30px; */
+}
+section.session1 .container .left-text .content {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 64px;
+  letter-spacing: -3%;
+  color: #1e1b1b;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+section.session1 .container .left-text:hover .content {
+  color: var(--primary);
+  transition: 1s;
+}
+section.session1 .container .left-text:hover div.btn button {
+  background-color: #1e1b1b;
+  color: #e2e6e9;
+  transition: 1s;
+}
+section.session1 .container .left-text div.btn {
+  margin-bottom: 20px;
+}
+div.btn button {
+  width: 150px;
+  height: 64px;
+  border-radius: 12px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 31.5px;
+  color: #ffffff;
+  background-color: var(--primary);
+  padding: 16px, 40px, 16px, 40px;
+  gap: 10px;
+  border: none;
+  transition: 1s;
+}
+section.session1 .container .left-text .time-container {
+  display: flex;
+  gap: 5px;
+}
+section.session1 .container .left-text .time-container {
+  line-height: 15px;
+}
+section.session1 .container .left-text .time-container .time .caption {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #939191;
+}
+section.session1 .container .left-text .time-container .time p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 31.5px;
+  color: #1e1b1b;
+}
+section.session1 .container .right-img {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
+  background-image: url("/Image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.session1 .container .right-img .service {
+  position: absolute;
+  height: 202px;
+  width: 250px;
+  top: -3%;
+  left: -18%;
+  /* border-radius: 18px; */
+}
+section.session1 .container .right-img .rating {
+  position: absolute;
+  height: 202px;
+  width: 250px;
+  right: -13%;
+  bottom: 0;
+  /* border-radius: 18px; */
+}
+
+/* session 2 starts here */
+section.session2 {
+  border: 1px solid red;
+  height: 120vh;
+  width: 100%;
+  background-color: #e2e6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+}
+section.session2 .left-container {
+  width: 40%;
+  height: 80%;
+  border: 1px solid red;
+}
+section.session2 .left-container h2 {
+  border: 1px solid red;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 76px;
+  letter-spacing: -3%;
+}
+section.session2 .left-container .content1,
+section.session2 .left-container .content2,
+section.session2 .left-container .content3 {
+  display: flex;
+}
+section.session2 .left-container .content1 h3,
+section.session2 .left-container .content2 h3,
+section.session2 .left-container .content3 h3 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -3%;
+  color: #1e1b1b;
+  border: 2px solid black;
+}
+section.session2 .left-container .content1 p,
+section.session2 .left-container .content2 p,
+section.session2 .left-container .content3 p {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 23.5px;
+  line-height: 38px;
+  color: #1e1b1b;
+}
+.left-gap {
+  height: 30px;
+}
+section.session2 .right-container {
+  width: 40%;
+  height: 80%;
+  border: 1px solid red;
+}
+section.session2 .right-container h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 62.2px;
+  letter-spacing: -3%;
+}
+form input {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: none;
+}
+form .f-g {
+  height: 5px;
+}
+form .f-b-g {
+  height: 40px;
+}
+form input::placeholder {
+  position: absolute;
+  height: 26.18px;
+  top: 22.91px;
+  left: 40.33px;
+  opacity: 50%;
+}
